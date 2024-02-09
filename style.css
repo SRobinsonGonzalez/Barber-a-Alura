@@ -89,3 +89,50 @@ footer {
   font-size: 13px;
   margin: 20px;
 }
+
+/* Contacto */
+
+main {
+  margin: auto;
+  width: 940px;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-patron {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0;
+  transition: 1s all;
+  width: 40%;
+}
+
+.enviar:hover {
+  background-color: darkorange;
+  transform: scale(1.05);
+}
