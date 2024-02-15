@@ -92,11 +92,6 @@ footer {
 
 /* Contacto */
 
-main {
-  margin: auto;
-  width: 940px;
-}
-
 form {
   margin: 40px 0;
 }
@@ -120,7 +115,7 @@ form legend {
 }
 
 .enviar {
-  background-color: orange;
+  background: orange;
   border: none;
   border-radius: 5px;
   color: white;
@@ -138,7 +133,7 @@ form legend {
 }
 
 table {
-  margin: 40px;
+  margin: 40px 40px;
 }
 
 thead {
@@ -151,4 +146,88 @@ td,
 th {
   border: 1px solid #000000;
   padding: 8px 15px;
+}
+
+.banner {
+  width: 100%;
+}
+
+.principal {
+  background: #FFFFFF;
+  margin: 0 auto;
+  padding: 3em 0;
+  width: 940px;
+}
+
+.titulo-principal {
+  clear: left;
+  font-size: 2em;
+  margin: 0 0 1em;
+  text-align: center;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa {
+  padding: 3em 0;
+  background: linear-gradient(#FFFFFF, #888888);
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.mapa-contenido {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.diferenciales {
+  padding: 3em 0;
+  background: #888888;
+}
+
+.contenido-diferenciales {
+  margin: 0 auto;
+  width: 640px;
+}
+
+.lista-diferenciales {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+.items {
+  line-height: 1.5;
+}
+
+.items:first-child {
+  font-weight: bold;
+}
+
+.imagenDiferencial {
+  width: 60%;
+}
+
+.video {
+  margin: 1em auto;
+  width: 560px;
 }
