@@ -152,6 +152,22 @@ th {
   width: 100%;
 }
 
+/* main>p {
+  background: red;
+} */
+
+/* img+p {
+  background: yellow;
+} */
+
+/* img~p {
+  background: #088c19;
+} */
+
+/* .principal p:not(#mision) {
+  background: orange;
+} */
+
 .principal {
   background: #FFFFFF;
   margin: 0 auto;
@@ -219,15 +235,64 @@ th {
   line-height: 1.5;
 }
 
+.items::before {
+  content: "✔ ";
+}
+
 .items:first-child {
   font-weight: bold;
 }
 
 .imagenDiferencial {
+  box-shadow: 10px 10px 30px 10px #000000;
+  margin-bottom: 50px;
   width: 60%;
+  /* Se puede poner numeros negativos para que la sombra sea hacia la izquierda */
+  /* Para que la sombra sea interna se usa : inset 0 0 30px "con el punto de referencia que sea desde el centro del bloque y luego el spread" */
+}
+
+.imagenDiferencial:hover {
+  opacity: 0.3;
+  transition: 400ms;
+}
+
+.imagenDiferencial:not(:hover) {
+  opacity: 1;
+  transition: 400ms;
 }
 
 .video {
   margin: 1em auto;
   width: 560px;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .caja,
+  .principal,
+  .mapa-contenido,
+  .contenido-diferenciales,
+  .video {
+    width: auto;
+  }
+
+  .lista-diferenciales, .imagenDiferencial {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .imagenDiferencial {
+    margin-bottom: 50px;
+  }
+
+  .video {
+    background: #888888;
+  }
 }
